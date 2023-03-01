@@ -79,7 +79,9 @@ form::before {
 /* JUMBOTRON SECTION */
 .main-dashboard {
     width: calc(100% - 70px);
+    height: calc(100vh - 80px);
     overflow-y: auto;
+
 }
 
 .jumbotron {
@@ -112,6 +114,9 @@ form::before {
 
 /* CARD SECTION */
 
+#cards {
+    overflow-y: auto;
+}
 
 .avatar {
     width: 30px;
@@ -122,5 +127,14 @@ td button {
     height: 25px;
     background-color: lightgray;
     text-align: center;
-    vertical-align: 25px;
+}
+
+/* FAQ QUESTION */
+
+.list-group i:active{
+    rotate: 180deg;
+}
+
+.list-group .paragraph:active {
+    display: block;
 }

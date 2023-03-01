@@ -64,7 +64,7 @@
         <!-- /HEADER SECTION -->
 
         <!-- MAIN SECTION -->
-        <!-- JUMBOTRON SECTION -->
+
         <main class="d-flex">
             <div class="main-navbar d-flex justify-content-center">
                 <div class="list d-flex align-items-center flex-column justify-content-between text-light py-3">
@@ -92,22 +92,23 @@
                     </ul>
                 </div>
             </div>
+            <!-- JUMBOTRON SECTION -->
             <div class="main-dashboard">
                 <div class="jumbotron text-light p-1">
-                    <div class="container">
+                    <div class="container-fluid">
                         <div class="row">
-                            <div class=" col-12 col-md-4 py-3 order-1 order-sm-0">
+                            <div class=" col-12 col-md-4 py-3 order-md-3">
                                 <p class="students d-inline"><strong>Nuovo Studente</strong></p>
                                 <button type="button" class="btn btn-primary btn-lg p-0 mx-3">
                                     <i class="fa-solid fa-plus"></i>
                                 </button>
                             </div>
-                            <div class="boolean col-12 col-md-4 py-3 order-2 order-sm-0">
+                            <div class="boolean col-12 col-md-4 py-3 order-md1">
                                 <span class="fs-3"><strong>Boolean</strong></span>
                                 <span class="badge">Piano Blaze <br></span>
 
                             </div>
-                            <div class="minutes col-12 col-md-4 py-3 order-3 order-sm-0">
+                            <div class="minutes col-12 col-md-4 py-3 order-md-2">
                                 <p class="fs-6"><strong>Studenti online negli ultimi 30 minuti <br> 125</strong></p>
                             </div>
                         </div>
@@ -116,63 +117,272 @@
                 <!-- CARD SECTION -->
                 <section id="cards">
                     <div class="container-fluid">
-                      <div class="row">
-                        <!-- CARD 1: PRIME CLASSI AND FAQ -->
-                        <div class="col-12 col-lg-8">
-                          <div class="row">
-                            <div class="ms_content">
-                              <!-- CARD CLASSI -->
-                              <div class="card my-4">
-                                <div class="card-header fs-4">
-                                  Prossime classi
+                        <div class="row">
+                            <!-- CARD 1: PRIME CLASSI AND FAQ -->
+                            <div class="col-12 col-lg-8">
+                                <div class="row">
+                                    <div class="ms_content">
+                                        <!-- CARD CLASSI -->
+                                        <div class="card my-4">
+                                            <div class="card-header fs-4">
+                                                Prossime classi
+                                            </div>
+                                            <div class="card-body">
+                                                <table class="table ms_table-hover">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Nome</th>
+                                                            <th class="d-none d-md-table-cell">Data Inizio</th>
+                                                            <th class="d-none d-md-table-cell">ROI</th>
+                                                            <th>Stato</th>
+                                                            <th>Azioni</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <img class="avatar" src="img/class-avatar.jpg" alt="">
+                                                                <span>Classe 75</span>
+                                                            </td>
+                                                            <td class="d-none d-md-table-cell">
+                                                                15 febbraio 2021
+                                                            </td>
+                                                            <td class="d-none d-md-table-cell">
+                                                                20%
+                                                            </td>
+                                                            <td>
+                                                                <span class="badge text-bg-success">Done</span>
+                                                            </td>
+                                                            <td>
+                                                                <button class="p-0">
+                                                                    <i class="fa-solid fa-pencil"></i>
+                                                                </button>
+                                                                <button class="p-0">
+                                                                    <i class="fa-solid fa-trash"></i>
+                                                                </button>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <img class="avatar" src="img/class-avatar.jpg" alt="">
+                                                                <span>Classe 76</span>
+                                                            </td>
+                                                            <td class="d-none d-md-table-cell">
+                                                                16 febbraio 2021
+                                                            </td>
+                                                            <td class="d-none d-md-table-cell">
+                                                                20%
+                                                            </td>
+                                                            <td>
+                                                                <span class="badge text-bg-success">Done</span>
+                                                            </td>
+                                                            <td>
+                                                                <button class="p-0">
+                                                                    <i class="fa-solid fa-pencil"></i>
+                                                                </button>
+                                                                <button class="p-0">
+                                                                    <i class="fa-solid fa-trash"></i>
+                                                                </button>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <img class="avatar" src="img/class-avatar.jpg" alt="">
+                                                                <span>Classe 77</span>
+                                                            </td>
+                                                            <td class="d-none d-md-table-cell">
+                                                                17 febbraio 2021
+                                                            </td>
+                                                            <td class="d-none d-md-table-cell">
+                                                                20%
+                                                            </td>
+                                                            <td>
+                                                                <span
+                                                                    class="badge rounded-pill text-bg-warning">Process</span>
+                                                            </td>
+                                                            <td>
+                                                                <button class="p-0">
+                                                                    <i class="fa-solid fa-pencil"></i>
+                                                                </button>
+                                                                <button class="p-0">
+                                                                    <i class="fa-solid fa-trash"></i>
+                                                                </button>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <img class="avatar" src="img/class-avatar.jpg" alt="">
+                                                                <span>Classe 78</span>
+                                                            </td>
+                                                            <td class="d-none d-md-table-cell">
+                                                                18 febbraio 2021
+                                                            </td>
+                                                            <td class="d-none d-md-table-cell">
+                                                                20%
+                                                            </td>
+                                                            <td>
+                                                                <span class="badge text-bg-success">Done</span>
+                                                            </td>
+                                                            <td>
+                                                                <button class="p-0">
+                                                                    <i class="fa-solid fa-pencil"></i>
+                                                                </button>
+                                                                <button class="p-0">
+                                                                    <i class="fa-solid fa-trash"></i>
+                                                                </button>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <img class="avatar" src="img/class-avatar.jpg" alt="">
+                                                                <span>Classe 79</span>
+                                                            </td>
+                                                            <td class="d-none d-md-table-cell">
+                                                                19 febbraio 2021
+                                                            </td>
+                                                            <td class="d-none d-md-table-cell">
+                                                                20%
+                                                            </td>
+                                                            <td>
+                                                                <span
+                                                                    class="badge rounded-pill text-bg-danger">Failed</span>
+                                                            </td>
+                                                            <td>
+                                                                <button class="p-0">
+                                                                    <i class="fa-solid fa-pencil"></i>
+                                                                </button>
+                                                                <button class="p-0">
+                                                                    <i class="fa-solid fa-trash"></i>
+                                                                </button>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <img class="avatar" src="img/class-avatar.jpg" alt="">
+                                                                <span>Classe 80</span>
+                                                            </td>
+                                                            <td class="d-none d-md-table-cell">
+                                                                20 febbraio 2021
+                                                            </td>
+                                                            <td class="d-none d-md-table-cell">
+                                                                20%
+                                                            </td>
+                                                            <td>
+                                                                <span class="badge text-bg-success">Done</span>
+                                                            </td>
+                                                            <td>
+                                                                <button class="p-0">
+                                                                    <i class="fa-solid fa-pencil"></i>
+                                                                </button>
+                                                                <button class="p-0">
+                                                                    <i class="fa-solid fa-trash"></i>
+                                                                </button>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <img class="avatar" src="img/class-avatar.jpg" alt="">
+                                                                <span>Classe 81</span>
+                                                            </td>
+                                                            <td class="d-none d-md-table-cell">
+                                                                21 febbraio 2021
+                                                            </td>
+                                                            <td class="d-none d-md-table-cell">
+                                                                20%
+                                                            </td>
+                                                            <td>
+                                                                <span
+                                                                    class="badge rounded-pill text-bg-danger">Failed</span>
+                                                            </td>
+                                                            <td>
+                                                                <button class="p-0">
+                                                                    <i class="fa-solid fa-pencil"></i>
+                                                                </button>
+                                                                <button class="p-0">
+                                                                    <i class="fa-solid fa-trash"></i>
+                                                                </button>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <img class="avatar" src="img/class-avatar.jpg" alt="">
+                                                                <span>Classe 82</span>
+                                                            </td>
+                                                            <td class="d-none d-md-table-cell">
+                                                                15 febbraio 2021
+                                                            </td>
+                                                            <td class="d-none d-md-table-cell">
+                                                                20%
+                                                            </td>
+                                                            <td>
+                                                                <span class="badge text-bg-success">Done</span>
+                                                            </td>
+                                                            <td>
+                                                                <button class="p-0">
+                                                                    <i class="fa-solid fa-pencil"></i>
+                                                                </button>
+                                                                <button class="p-0">
+                                                                    <i class="fa-solid fa-trash"></i>
+                                                                </button>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+                                    </div>
                                 </div>
-                                <div class="card-body">
-                                  <table class="table ms_table-hover">
-                                    <thead>
-                                      <tr>
-                                        <th>Nome</th>
-                                        <th class="d-none d-md-table-cell">Data Inizio</th>
-                                        <th class="d-none d-md-table-cell">ROI</th>
-                                        <th>Stato</th>
-                                        <th>Azioni</th>
-                                      </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <img class="avatar" src="img/class-avatar.jpg" alt="">
-                                                <span>Classe 75</span> 
-                                            </td>
-                                            <td class="d-none d-md-table-cell">
-                                                15 febbraio 2021
-                                            </td>
-                                            <td class="d-none d-md-table-cell">
-                                                20%
-                                            </td>
-                                            <td>
-                                                <span class="badge text-bg-success">Done</span>
-                                            </td>
-                                            <td>
-                                                <button class="p-0">
-                                                    <i class="fa-solid fa-pencil"></i>
-                                                </button>  
-                                                <button class="p-0">  
-                                                    <i class="fa-solid fa-trash"></i>
-                                                </button>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                  </table>
-                                </div>
-                              </div>
-          
                             </div>
-                          </div>
+                            <!-- TO DO SECTION -->
+                            <div class="col-12 col-lg-4">
+                                <div class="card my-4">
+                                    <div class="card-header">
+                                        <strong>ToDo</strong>
+                                    </div>
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <input class="form-check-input me-1" type="checkbox" value=""
+                                                id="firstCheckboxStretched">
+                                            <label class="form-check-label stretched-link"
+                                                for="firstCheckboxStretched">Kick off nuove classi</label>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <input class="form-check-input me-1" type="checkbox" value=""
+                                                id="secondCheckboxStretched">
+                                            <label class="form-check-label stretched-link"
+                                                for="secondCheckboxStretched">Lezione su Bootstrap in classe #75</label>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <input class="form-check-input me-1" type="checkbox" value=""
+                                                id="thirdCheckboxStretched">
+                                            <label class="form-check-label stretched-link"
+                                                for="thirdCheckboxStretched">Controllare username github
+                                                studenti</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- /TO DO SECTION -->
+                            <!-- CARD 2 -->
+                            <div class="col-12 col-lg-8">
+                                <div class="card my-4">
+                                    <div class="card-header">
+                                        <strong>F.A.Q.</strong>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Come aggiumgere un nuovo studente?</li>
+                                        <li class="list-group-item">Come posso accedere alle informazioni del mio
+                                            account?</li>
+                                        <li class="list-group-item">Posso usare questa dashboard da MOBILE?</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                      </div>
-          
+
+
                     </div>
-                  </section>
+                </section>
                 <!-- /CARD SECTION -->
             </div>
 
