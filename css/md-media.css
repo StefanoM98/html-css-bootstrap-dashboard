@@ -1,0 +1,11 @@
+@media screen and (min-width: 768px) {
+    .students {
+        display: table-footer-group;
+    }    
+    .boolean {
+        order: 1;
+    }
+    .minutes {
+        order: 2;
+    }
+}
