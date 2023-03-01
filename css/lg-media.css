@@ -1,0 +1,5 @@
+/* MEDIA QUERY DESKTOP MOD  */
+
+@media screen and (min-width: 992px) {
+    .main-navbar { width: 160px;}
+}

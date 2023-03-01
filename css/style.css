@@ -5,6 +5,7 @@ img {
 
 ul {
     list-style-type: none;
+    margin: 0;
 }
 
 /* WRAPPER SECTION */
@@ -15,8 +16,19 @@ ul {
 
 /* HEADER SECTION */
 
+.header-nav {
+    height: 80px;
+}
+.container-fluid {
+    vertical-align: 80px;
+}
+
 .logo-small {
     width: 70px;
+}
+
+.logo {
+    margin-right: 1rem;
 }
 
 form,
@@ -57,11 +69,17 @@ main {
 
 .main-navbar {
     background-color: #072035;
+    background-image: url(../img/sidebar-bg.png);
     height: calc(100vh - 80px);
     width: 100px;
 }
 
+.list1 li {
+    padding: 1px 0;
+}
 
+
+/* DASHBOARD SECTION */
 .main-dashboard {
     width: calc(100% - 100px);
     background-color: lightsalmon;
