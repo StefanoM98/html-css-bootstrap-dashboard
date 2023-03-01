@@ -62,9 +62,6 @@ form::before {
 
 /* MAIN SECTION */
 
-main {
-    display: flex;
-}
 
 .main-navbar {
     background-color: #072035;
@@ -77,8 +74,9 @@ main {
     padding: 10px 0;
 }
 
-
 /* DASHBOARD SECTION */
+
+/* JUMBOTRON SECTION */
 .main-dashboard {
     width: calc(100% - 70px);
     overflow-y: auto;
@@ -110,4 +108,19 @@ main {
 
 .badge {
     background-color: #165bba;
+}
+
+/* CARD SECTION */
+
+
+.avatar {
+    width: 30px;
+}
+
+td button {
+    width: 25px;
+    height: 25px;
+    background-color: lightgray;
+    text-align: center;
+    vertical-align: 25px;
 }
