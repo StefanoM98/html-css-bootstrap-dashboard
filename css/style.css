@@ -130,11 +130,25 @@ td button {
 }
 
 /* FAQ QUESTION */
-
-.list-group i:active{
-    rotate: 180deg;
+.question {
+    position: relative;
 }
 
-.list-group .paragraph:active {
+.question i {
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    transition: all 0.5s
+}
+
+.paragraph {
+    display: none;
+}
+
+.question:active .paragraph {
     display: block;
+}
+
+.questions:hover i {
+    rotate: 180deg;
 }
