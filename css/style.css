@@ -8,6 +8,12 @@ ul {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
 /* WRAPPER SECTION */
 .ms_wrapper {
     width: 100%;
@@ -58,6 +64,13 @@ form::before {
 
 .fa-bell {
     color: #ff8f00;
+    position: relative;
+    top: 5px;
+}
+
+.dropdown-menu[data-bs-popper] {
+    top: 55px;
+    left: -130px;
 }
 
 /* MAIN SECTION */
@@ -70,10 +83,13 @@ form::before {
     width: 70px;
 }
 
-.list1 li {
+.ms_list li {
     padding: 10px 0;
 }
 
+.ms_list li:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
 /* DASHBOARD SECTION */
 
 /* JUMBOTRON SECTION */
