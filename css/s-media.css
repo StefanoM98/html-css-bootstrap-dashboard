@@ -1,0 +1,9 @@
+@media screen and (max-width: 576px) {
+    .offcanvas.offcanvas-end {
+        width: 100%;
+    }
+
+    .media {
+        display: none;
+    }
+}

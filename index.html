@@ -25,8 +25,7 @@
 
     <!-- MEDIA QUERY -->
     <link rel="stylesheet" href="css/lg-media.css">
-    <link rel="stylesheet" href="css/md-media.css">
-
+    <link rel="stylesheet" href="css/s-media.css">
 </head>
 
 <body>
@@ -39,8 +38,8 @@
                         <img class="logo-small mr-2 d-lg-none" src="img/mobile-logo.png" alt="">
                         <a href="">
                             <img src="img/logo.svg" alt="" class="logo d-none d-lg-inline mr-2">
-                        </a>    
-                        <form class="d-flex me-auto flex-grow-1 align-items-center fs-5 rounded-3 px-3 py-2"
+                        </a>
+                        <form class="lens d-flex me-auto flex-grow-1 align-items-center fs-5 rounded-3 px-3 py-2"
                             role="search">
                             <input class="form-control search-bar" type="search"
                                 placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
@@ -56,11 +55,12 @@
                                 <i class="fa-solid fa-ellipsis-vertical d-none d-lg-inline px-2"></i>
                             </li>
                             <li class="nav-item dropdown">
-                                <i class="fa-solid fa-bell px-2 nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"></i>
+                                <i class="fa-solid fa-bell px-2 nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                                    href="#" role="button"></i>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="#">Profilo</a></li>
                                     <li><a class="dropdown-item" href="#">Fatturazione</a></li>
-                                     <li><a class="dropdown-item" href="#">Logout</a></li>
+                                    <li><a class="dropdown-item" href="#">Logout</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -108,17 +108,99 @@
                         <div class="row">
                             <div class=" col-12 col-md-4 py-3 order-md-3">
                                 <p class="students d-inline"><strong>Nuovo Studente</strong></p>
-                                <button type="button" class="btn btn-primary btn-lg p-0 mx-3">
+                                <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvas" role="button"
+                                    aria-controls="offcanvas">
                                     <i class="fa-solid fa-plus"></i>
-                                </button>
+                                </a>
+                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas"
+                                    aria-labelledby="offcanvasLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="offcanvasLabel">Inserisci un nuovo
+                                            studente</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="form-floating mb-3">
+                                                    <input type="text" class="form-control" id="floatingInput"
+                                                        placeholder="name">
+                                                    <label for="floatingInput">Nome</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">    
+                                                <div class="form-floating">
+                                                    <input type="text" class="form-control" id="floatingInput"
+                                                        placeholder="Cognome">
+                                                    <label for="floatingInput">Cognome</label>
+                                                </div>
+                                            </div>    
+                                        </div>
+                                        <form class="row g-3 bg-white">
+                                            <div class="col-md-6">
+                                                <label for="inputEmail4" class="form-label">Email</label>
+                                                <input type="email" class="form-control" id="inputEmail4">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="inputPassword4" class="form-label">Password</label>
+                                                <input type="password" class="form-control" id="inputPassword4">
+                                            </div>
+                                            <div class="col-6">
+                                                <label for="inputAddress" class="form-label">Indirizzo</label>
+                                                <input type="text" class="form-control" id="inputAddress"
+                                                    placeholder="123 Via Fasulla">
+                                            </div>
+                                            <div class="col-6">
+                                                <label for="inputAddress2" class="form-label">Indirizzo 2</label>
+                                                <input type="text" class="form-control" id="inputAddress2"
+                                                    placeholder="Appartamento, studio, o piano">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label for="inputCity" class="form-label">Città</label>
+                                                <input type="text" class="form-control" id="inputCity">
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label for="inputState" class="form-label">Paese</label>
+                                                <select id="inputState" class="form-select">
+                                                    <option selected>Choose...</option>
+                                                    <option>Italia</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <label for="inputZip" class="form-label">CAP</label>
+                                                <input type="text" class="form-control" id="inputZip">
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                    <label class="form-check-label" for="gridCheck">
+                                                        Seleziona per proseguire
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <button type="submit" class="btn btn-primary save">Salva</button>
+                                                <button type="button" class="btn btn-warning save">Svuota</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
                             <div class="boolean col-12 col-md-4 py-3 order-md1">
                                 <span class="fs-3"><strong>Boolean</strong></span>
-                                <span class="badge">Piano Blaze <br></span>
-
+                                <span class="badge">Piano Blaze</span>
+                                <br>
+                                <span class="badge">3 app</span>
+                                <i class="fa-solid fa-chevron-right"></i>
+                                <i class="fa-solid fa-chevron-right"></i>
+                                <span class="badge medias">+</span>
+                                <span class="badge media">Boolean mobile app</span>
+                                <span class="badge media">Boolean web app</span>
+                                <span class="badge media">Boolean blog up</span>
                             </div>
                             <div class="minutes col-12 col-md-4 py-3 order-md-2">
-                                <p class="fs-6"><strong>Studenti online negli ultimi 30 minuti <br> 125</strong></p>
+                                <p class="fs-6"><strong>Studenti online negli ultimi 30 minuti <br> <span class="fs-2">125</span></strong></p>
                             </div>
                         </div>
                     </div>
@@ -149,7 +231,8 @@
                                             <tbody>
                                                 <tr>
                                                     <td>
-                                                        <img class="avatar" src="img/class-avatar.jpg" alt="">
+                                                        <img class="avatar rounded-circle" src="img/class-avatar.jpg"
+                                                            alt="">
                                                         <span>Classe 75</span>
                                                     </td>
                                                     <td class="d-none d-md-table-cell">
@@ -172,7 +255,8 @@
                                                 </tr>
                                                 <tr>
                                                     <td>
-                                                        <img class="avatar" src="img/class-avatar.jpg" alt="">
+                                                        <img class="avatar rounded-circle" src="img/class-avatar.jpg"
+                                                            alt="">
                                                         <span>Classe 76</span>
                                                     </td>
                                                     <td class="d-none d-md-table-cell">
@@ -195,7 +279,8 @@
                                                 </tr>
                                                 <tr>
                                                     <td>
-                                                        <img class="avatar" src="img/class-avatar.jpg" alt="">
+                                                        <img class="avatar rounded-circle" src="img/class-avatar.jpg"
+                                                            alt="">
                                                         <span>Classe 77</span>
                                                     </td>
                                                     <td class="d-none d-md-table-cell">
@@ -218,7 +303,8 @@
                                                 </tr>
                                                 <tr>
                                                     <td>
-                                                        <img class="avatar" src="img/class-avatar.jpg" alt="">
+                                                        <img class="avatar rounded-circle" src="img/class-avatar.jpg"
+                                                            alt="">
                                                         <span>Classe 78</span>
                                                     </td>
                                                     <td class="d-none d-md-table-cell">
@@ -241,7 +327,8 @@
                                                 </tr>
                                                 <tr>
                                                     <td>
-                                                        <img class="avatar" src="img/class-avatar.jpg" alt="">
+                                                        <img class="avatar rounded-circle" src="img/class-avatar.jpg"
+                                                            alt="">
                                                         <span>Classe 79</span>
                                                     </td>
                                                     <td class="d-none d-md-table-cell">
@@ -264,7 +351,8 @@
                                                 </tr>
                                                 <tr>
                                                     <td>
-                                                        <img class="avatar" src="img/class-avatar.jpg" alt="">
+                                                        <img class="avatar rounded-circle" src="img/class-avatar.jpg"
+                                                            alt="">
                                                         <span>Classe 80</span>
                                                     </td>
                                                     <td class="d-none d-md-table-cell">
@@ -287,7 +375,8 @@
                                                 </tr>
                                                 <tr>
                                                     <td>
-                                                        <img class="avatar" src="img/class-avatar.jpg" alt="">
+                                                        <img class="avatar rounded-circle" src="img/class-avatar.jpg"
+                                                            alt="">
                                                         <span>Classe 81</span>
                                                     </td>
                                                     <td class="d-none d-md-table-cell">
@@ -310,7 +399,8 @@
                                                 </tr>
                                                 <tr>
                                                     <td>
-                                                        <img class="avatar" src="img/class-avatar.jpg" alt="">
+                                                        <img class="avatar rounded-circle" src="img/class-avatar.jpg"
+                                                            alt="">
                                                         <span>Classe 82</span>
                                                     </td>
                                                     <td class="d-none d-md-table-cell">
@@ -346,24 +436,27 @@
                                     <div class="question p-2">
                                         <p class="fs-6">Come aggiungere un nuovo studente?</p>
                                         <i class="fa-solid fa-chevron-down"></i>
-                                        <p class="paragraph">Cliccando sulla "+" ti si aprira una nuova schermata e da li puoi mettere tutit i dati anagrafici dello studente</p>
+                                        <p class="paragraph">Cliccando sulla "+" ti si aprira una nuova schermata e da
+                                            li puoi mettere tutit i dati anagrafici dello studente</p>
                                     </div>
                                     <hr>
                                     <div class="question p-2">
                                         <p class="fs-6">Come aggiungere un nuovo studente?</p>
                                         <i class="fa-solid fa-chevron-down"></i>
-                                        <p class="paragraph">Cliccando sulla "+" ti si aprira una nuova schermata e da li puoi mettere tutit i dati anagrafici dello studente</p>
+                                        <p class="paragraph">Cliccando sulla "+" ti si aprira una nuova schermata e da
+                                            li puoi mettere tutit i dati anagrafici dello studente</p>
                                     </div>
                                     <hr>
                                     <div class="question p-2">
                                         <p class="fs-6">Come aggiungere un nuovo studente?</p>
                                         <i class="fa-solid fa-chevron-down"></i>
-                                        <p class="paragraph">Cliccando sulla "+" ti si aprira una nuova schermata e da li puoi mettere tutit i dati anagrafici dello studente</p>
+                                        <p class="paragraph">Cliccando sulla "+" ti si aprira una nuova schermata e da
+                                            li puoi mettere tutit i dati anagrafici dello studente</p>
                                     </div>
                                 </div>
 
                             </div>
-                           
+
                             <!-- CARD 2 -->
 
                             <div class="col-12 col-lg-4">
@@ -393,7 +486,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                                
+
                                 <div class="card my-4">
                                     <img src="img/stats.jpeg" alt="" class="stats">
                                     <h4 class="px-3">Utenti attivi</h4>
@@ -418,7 +511,9 @@
         <!-- /MAIN SECTION -->
     </div>
     <!-- JAVASCRIPS BOOTSTRAP -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

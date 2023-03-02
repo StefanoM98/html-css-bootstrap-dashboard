@@ -56,7 +56,7 @@ form .search-bar {
     background-color: unset;
 }
 
-form::before {
+.lens::before {
     content: "\f002";
     font-weight: 900;
     font-family: "Font Awesome 5 Free";
@@ -124,6 +124,20 @@ form::before {
     border-color: unset;
 }
 
+.offcanvas.offcanvas-end {
+    width: 60%;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.save {
+    width: 80px;
+}
+
+
+
 .badge {
     background-color: #165bba;
 }
@@ -143,6 +157,10 @@ td button {
     height: 25px;
     background-color: lightgray;
     text-align: center;
+}
+
+tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 /* FAQ QUESTION */
@@ -165,6 +183,6 @@ td button {
     display: block;
 }
 
-.questions:hover i {
+.question:active i {
     rotate: 180deg;
 }
